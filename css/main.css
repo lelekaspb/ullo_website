@@ -17,7 +17,7 @@ body {
 footer.main_footer {
   font-size: 18px;
   background-color: var(--bg-footer);
-  padding: 1rem;
+  padding: 0 2rem;
   font-family: var(--font);
   color: var(--main-text-color);
 }
@@ -25,6 +25,10 @@ footer.main_footer {
 @media only screen and (max-width: 600px) {
   footer.main_footer {
     font-size: 16px;
+  }
+
+  footer.main_footer {
+    padding: 0 1rem;
   }
 }
 
@@ -195,4 +199,42 @@ footer.main_footer a {
   .footer_general p {
     margin-bottom: 0;
   }
+}
+
+/* modal footer */
+.modal_subscribe {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 60%;
+}
+
+.close {
+  color: var(--secondary-text-color);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--main-text-color);
+  text-decoration: none;
+  cursor: pointer;
 }
