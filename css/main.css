@@ -75,10 +75,15 @@ footer.main_footer {
 }
 
 .footer_subscribe .form_subscribe input[type="email"] {
-  color: #928f8f;
+  /* color: #f2f2f2; */
   font-size: 17px;
   font-family: var(--font);
   width: 100%;
+  background-color: var(--bg-footer);
+}
+
+.footer_subscribe .form_subscribe input[type="email"]::placeholder {
+  color: #928f8f;
 }
 
 @media only screen and (max-width: 600px) {
@@ -92,6 +97,7 @@ footer.main_footer {
   font-size: 20px;
   cursor: pointer;
   transition: all 0.5s;
+  background-color: var(--bg-footer);
 }
 
 .footer_subscribe .form_subscribe button[type="submit"]:hover {
