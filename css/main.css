@@ -1,10 +1,173 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --font: font-family: 'Poppins', sans-serif;
+  --font: "Poppins", sans-serif;
   --bg-footer: #f6f6f6;
-  --main-text-color: #3A3A3A;
-  --nav-text-color: #5D6B82;
-  --pantone: #3CDBC0;
+  --main-text-color: #3a3a3a;
+  --nav-text-color: #5d6b82;
+  --pantone: #3cdbc0;
   --white: #ffffff;
 }
+
+main img {
+  width: 80vw;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+}
+
+/* Menu starts */
+
+.active {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+header {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 17px;
+  background: var(--bg-footer);
+}
+
+.menu_head {
+  display: flex;
+  gap: 30px;
+  padding: 1rem 4rem;
+}
+
+.menu_head ul {
+  list-style: none;
+}
+
+.menu_text {
+  width: 100%;
+}
+
+.menu_text > ul {
+  display: flex;
+  justify-content: center;
+  gap: calc(0.5rem + 6vw);
+  padding: 0;
+  margin: 0;
+}
+
+.menu_head a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+  height: fit-content;
+}
+
+.menu_head img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.menu_logo img {
+  width: 70px;
+}
+
+.menu_dropdown ul {
+  position: absolute;
+  background: var(--bg-footer);
+  border-radius: 25px;
+  width: 180px;
+  padding: 0 0 0.6rem 0.8rem;
+  margin-left: -1.7rem;
+}
+
+.menu_dropdown li {
+  margin: 1rem;
+  font-size: 15px;
+}
+
+.ham {
+  background-image: url("../images/icons/hamburger.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  margin-top: 0.3rem;
+}
+
+.cross {
+  background-image: url("../images/icons/cross.svg");
+  min-width: 20px;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  margin-top: 0.3rem;
+}
+
+.menu_chevron {
+  transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .menu_dropdown:hover ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .menu_text {
+    display: none;
+  }
+
+  .menu_logo {
+    margin-right: auto;
+  }
+
+  .menu_scroll {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  #menu_drop1,
+  #menu_drop2 {
+    display: block;
+    width: 17px;
+    float: right;
+    margin-top: 0.6rem;
+    margin-right: -9.3rem;
+  }
+
+  .menu_text.responsive {
+    display: block;
+    margin-top: 7rem;
+    height: 100vh;
+  }
+
+  .menu_text.responsive ul {
+    flex-direction: column;
+    margin-left: -6rem;
+    gap: 3rem;
+  }
+
+  .menu_dropdown ul {
+    position: relative;
+  }
+
+  .menu_dropdown li {
+    width: 100%;
+    margin: 1.5rem 0 0 10rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu_head {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Menu ends */
