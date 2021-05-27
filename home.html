@@ -53,26 +53,28 @@
             </li>
           </ul>
         </div>
-        <a class="menu_search" href="">
+        <div id="menu_search">
           <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
-        </a>
+        </div>
         <a class="menu_cart" href="cart.html">
           <img src="assets/icons/cart.svg" alt="Shopping cart" />
         </a>
         <div id="hamburger" class="ham hidden"></div>
       </nav>
+      <form class="search_box hidden" action="#" method="get" role="search">
+        <input
+          type="text"
+          placeholder="Type to search"
+          name="query"
+          value=""
+          required
+        />
+        <button id="search_button" type="submit">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </button>
+        <img id="search_cross" src="assets/icons/cross.svg" alt="Cross icon" />
+      </form>
     </header>
-
-    <main>
-      <img src="assets/icons/logo_ullo.svg" alt="" />
-      <img src="assets/icons/logo_ullo.svg" alt="" />
-      <img src="assets/icons/logo_ullo.svg" alt="" />
-      <img src="assets/icons/logo_ullo.svg" alt="" />
-      <img src="assets/icons/logo_ullo.svg" alt="" />
-      <img src="assets/icons/logo_ullo.svg" alt="" />
-      <img src="assets/icons/logo_ullo.svg" alt="" />
-    </main>
-
     <script src="js/main.js"></script>
   </body>
 </html>
