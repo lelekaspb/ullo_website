@@ -175,22 +175,23 @@ footer.main_footer a {
     grid-column: 1 / span 1;
     grid-row: 3 / span 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 1.5rem;
   }
 
   .footer_payment * {
-    margin-right: 0;
+    margin-right: 1rem;
   }
 
   .footer_social {
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 1.5rem;
   }
 
   .footer_social * {
+    margin-right: 1rem;
     margin-left: 0;
   }
 
@@ -198,7 +199,7 @@ footer.main_footer a {
     grid-column: 1 / span 1;
     grid-row: 5 / span 1;
     margin-top: 1.5rem;
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     font-size: 14px;
   }
 
