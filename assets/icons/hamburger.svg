@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #5d6b82;
+      }
+    </style>
+  </defs>
+  <g id="hamburger">
+    <g>
+      <rect class="cls-1" y="4" width="51" height="4.45" rx="0.54"/>
+      <rect class="cls-1" y="24.28" width="51" height="4.45" rx="0.54"/>
+      <rect class="cls-1" y="44.55" width="51" height="4.45" rx="0.54"/>
+    </g>
+  </g>
+</svg>

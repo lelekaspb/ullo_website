@@ -1,0 +1,16 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.41 12.91">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #5d6b82;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="chevron-down">
+    <line id="Line_117" data-name="Line 117" class="cls-1" x1="0.71" y1="0.71" x2="12.21" y2="12.21"/>
+    <line id="Line_118" data-name="Line 118" class="cls-1" x1="22.7" y1="0.71" x2="11.2" y2="12.21"/>
+  </g>
+</svg>
