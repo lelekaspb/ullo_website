@@ -30,7 +30,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  font-size: 17px;
+  font-size: 16.5px;
   background: var(--bg-footer);
 }
 
@@ -77,16 +77,16 @@ header {
   border-radius: 25px;
   width: 180px;
   padding: 0 0 0.6rem 0.8rem;
-  margin-left: -1.7rem;
+  margin-left: -1.8rem;
 }
 
 .menu_dropdown li {
-  margin: 1rem;
+  margin: 0.9rem;
   font-size: 15px;
 }
 
 .ham {
-  background-image: url("../images/icons/hamburger.svg");
+  background-image: url("../assets/icons/hamburger.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ header {
 }
 
 .cross {
-  background-image: url("../images/icons/cross.svg");
+  background-image: url("../assets/icons/cross.svg");
   min-width: 20px;
   min-height: 20px;
   background-repeat: no-repeat;
@@ -109,9 +109,30 @@ header {
   display: none;
 }
 
+.menu_text a {
+  position: relative;
+}
+
+.menu_text a:before {
+  content: "";
+  position: absolute;
+  background-color: var(--nav-text-color);
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.1s ease-out;
+}
+
 @media screen and (min-width: 900px) {
   .menu_dropdown:hover ul {
     display: block;
+  }
+
+  .menu_text a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
   }
 }
 
@@ -138,7 +159,7 @@ header {
     display: block;
     width: 17px;
     float: right;
-    margin-top: 0.6rem;
+    margin-top: 0.5rem;
     margin-right: -9.3rem;
   }
 
@@ -156,11 +177,16 @@ header {
 
   .menu_dropdown ul {
     position: relative;
+    margin-top: 2.2rem;
+  }
+
+  .menu_dropdown:last-of-type ul {
+    margin-bottom: 4rem;
   }
 
   .menu_dropdown li {
     width: 100%;
-    margin: 1.5rem 0 0 10rem;
+    margin: 1.4rem 0 0 8rem;
   }
 }
 
