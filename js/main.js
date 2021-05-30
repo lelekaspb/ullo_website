@@ -38,6 +38,8 @@ function searchMenu() {
   document.querySelector(".menu_head").classList.toggle("hidden");
 }
 
+
+// footer
 const formSubscribe = document.querySelector(".form_subscribe");
 const modalSubscribe = document.querySelector(".modal_subscribe");
 
@@ -83,3 +85,4 @@ function showModal() {
     modalSubscribe.style.display = "none";
   });
 }
+// footer end
