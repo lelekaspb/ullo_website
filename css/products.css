@@ -1,3 +1,7 @@
+header {
+    z-index: 5;
+}
+
 main {
     margin-top: 62px;
     color: var(--main-text-color);
@@ -17,6 +21,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
+    position: relative;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
     grid-template-rows: 1fr;
@@ -38,6 +43,40 @@ main {
     .moods {
         background-image: url("../assets/images/living_room_600.jpg");
     }
+}
+
+.moods::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.moods.color_1::before {
+    background-color: rgba(255, 26, 45, 0.2);
+}
+.moods.color_2::before {
+    background-color: rgba(3, 70, 242, 0.2);
+}
+.moods.color_3::before {
+    background-color: rgba(88, 0, 173, 0.2);
+} 
+.moods.color_4::before {
+    background-color: rgba(224, 239, 255, 0.1);
+} 
+.moods.color_5::before {
+    background-color: rgba(215, 0, 233, 0.2);
+}
+.moods.color_6::before {
+    background-color: rgba(234, 164, 60, 0.2);
+}
+.moods.color_7::before {
+    background-color: rgba(146, 212, 31, 0.2); 
+}
+.moods.color_8::before {
+    background-color: rgba(2, 145, 3, 0.2);
 }
 
 .left {
@@ -70,6 +109,7 @@ main {
     /* border: 1px solid green; */
     margin: calc(0.3rem + 0.3vw) 0;
     cursor: pointer;
+    z-index: 2;
 }
 
 @media  only screen  and (max-width: 500px) {
@@ -80,9 +120,16 @@ main {
     }
 }
 
+.color.highlighted {
+    transform: scale(1.1);
+}
+
 .color_1 {
     background-color:  rgba(255, 26, 45, 1);
 }
+/* .color_1.highlighted {
+    box-shadow: 0 0 7px 5px rgba(153, 153, 153, 0.8);
+} */
 
 .color_2 {
     background-color: rgba(3, 70, 242, 1);
@@ -93,7 +140,7 @@ main {
 }
 
 .color_4 {
-    background-color: rgba(154, 183, 214, 1);
+    background-color: rgba(224, 239, 255, 1);
 }
 
 .color_5 {
@@ -223,6 +270,13 @@ option {
 .price {
     order: 3;
     margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.sale {
+    text-decoration: line-through;
+    font-size: smaller;
 }
 
 .add_to_cart {
@@ -235,4 +289,5 @@ option {
     padding: 0.5rem 1.5rem;
     border-radius: 15px;
     cursor: pointer;
+    margin-top: auto;
 }

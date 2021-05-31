@@ -96,58 +96,25 @@
           <h1>Our products</h1>
           <div class="select_wrapper">
             <select name="sort" id="sort" class="sort">
-              <option value="" selected disabled>Sort by
-                <!-- <div class="select_label">
-                  <div class="select_label_text"> Sort by</div>
-                  <div class="select_label_icon">
-                    <img src="assets/icons/sort.svg" alt="chevron down">
-                  </div>
-                 </div> -->
-              </option>
+              <option value="" selected disabled>Sort by</option>
               <option value="category">category</option>
-              <option value="relevance">none</option>
+              <option value="none">none</option>
             </select>
           </div>
         </div>
-        <div class="products_list">
-          <article class="product">
-            <h3 class="product_title">Glow E27</h3>
-            <img src="assets/images/glow_E27_1.png" alt="glow e27" class="product_image">
-            <p class="price"><span class="price_number">249</span>&nbsp;kr</p>
-            <button class="add_to_cart">add to cart</button>
-          </article>
-          <article class="product">
-            <h3 class="product_title">Glow E27</h3>
-            <img src="assets/images/glow_E27_1.png" alt="glow e27" class="product_image">
-            <p class="price"><span class="price_number">249</span>&nbsp;kr</p>
-            <button class="add_to_cart">add to cart</button>
-          </article>
-          <article class="product">
-            <h3 class="product_title">Glow E27</h3>
-            <img src="assets/images/glow_E27_1.png" alt="glow e27" class="product_image">
-            <p class="price"><span class="price_number">249</span>&nbsp;kr</p>
-            <button class="add_to_cart">add to cart</button>
-          </article>
-          <article class="product">
-            <h3 class="product_title">Glow E27</h3>
-            <img src="assets/images/glow_E27_1.png" alt="glow e27" class="product_image">
-            <p class="price"><span class="price_number">249</span>&nbsp;kr</p>
-            <button class="add_to_cart">add to cart</button>
-          </article>
-          <article class="product">
-            <h3 class="product_title">Glow E27</h3>
-            <img src="assets/images/glow_E27_1.png" alt="glow e27" class="product_image">
-            <p class="price"><span class="price_number">249</span>&nbsp;kr</p>
-            <button class="add_to_cart">add to cart</button>
-          </article>
-          <article class="product">
-            <h3 class="product_title">Glow E27</h3>
-            <img src="assets/images/glow_E27_1.png" alt="glow e27" class="product_image">
-            <p class="price"><span class="price_number">249</span>&nbsp;kr</p>
-            <button class="add_to_cart">add to cart</button>
-          </article>
-      </div>
+        <div class="products_list"></div>
       </section>
+      <template class="product_template">
+        <article class="product">
+          <h3 class="product_title"></h3>
+          <img src="" alt="" class="product_image">
+          <div class="price">
+            <p class="sale"><span class="sale_price"></span>&nbsp;kr</p>
+            <p>&nbsp;<span class="price_number"></span>&nbsp;kr</p>
+          </div>
+          <button class="add_to_cart">add to cart</button>
+        </article>
+      </template>
     </main>
     <footer class="main_footer">
       <div class="footer_wrapper">
