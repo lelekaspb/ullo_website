@@ -1,0 +1,238 @@
+main {
+    margin-top: 62px;
+    color: var(--main-text-color);
+    font-size: calc(1rem + 0.5vw);
+}
+
+.hidden {
+    display: none;
+}
+
+/* moods section */
+.moods {
+    width: 100%;
+    height: 60vh;
+    background-image: url("../assets/images/living_room.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    grid-template-rows: 1fr;
+}
+
+@media  only screen  and (max-width: 1000px) {
+    .moods {
+        background-image: url("../assets/images/living_room_1000.jpg");
+    }
+}
+
+@media  only screen  and (max-width: 800px) {
+    .moods {
+        background-image: url("../assets/images/living_room_800.jpg");
+    }
+}
+
+@media  only screen  and (max-width: 600px) {
+    .moods {
+        background-image: url("../assets/images/living_room_600.jpg");
+    }
+}
+
+.left {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.right {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color {
+    width: calc(3rem + 1vw);
+    height: calc(3rem + 1vw);
+    border-radius: 100%;
+    /* border: 1px solid green; */
+    margin: calc(0.3rem + 0.3vw) 0;
+    cursor: pointer;
+}
+
+@media  only screen  and (max-width: 500px) {
+    .color {
+        width: calc(2rem + 1vw);
+        height: calc(2rem + 1vw);  
+        margin: calc(0.3rem + 0.3vw) 1rem;
+    }
+}
+
+.color_1 {
+    background-color:  rgba(255, 26, 45, 1);
+}
+
+.color_2 {
+    background-color: rgba(3, 70, 242, 1);
+}
+
+.color_3 {
+    background-color: rgba(88, 0, 173, 1);
+}
+
+.color_4 {
+    background-color: rgba(154, 183, 214, 1);
+}
+
+.color_5 {
+    background-color: rgba(215, 0, 233, 1);
+}
+
+.color_6 {
+    background-color: rgba(234, 164, 60, 1);
+}
+
+.color_7 {
+    background-color: rgba(146, 212, 31, 1);
+}
+
+.color_8 {
+    background-color: rgba(2, 145, 3, 1);
+}
+
+/* products section */
+.products {
+    padding: calc(1rem + 2vw) calc(4rem + 3vw);
+}
+
+
+@media  only screen  and (max-width: 900px) {
+    .products {
+        padding: calc(1rem + 2vw) calc(2rem + 2vw);
+    }
+}
+
+.products_filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media  only screen  and (max-width: 500px) {
+    .products_filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+h1 {
+    margin: 0;
+}
+
+/* .select_wrapper {
+    padding: 1rem 1.5rem;
+} */
+
+.sort {
+    font-size: calc(0.7rem + 0.7vw);
+    font-weight: 600;
+    font-family: var(--font);
+    color: var(--main-text-color);
+    text-transform: capitalize;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #928F8F;
+    border-radius: 4rem;
+    padding: 0 1.5rem 0 1rem;
+    width: 110%;
+    background: url("../assets/icons/sort.svg");
+    background-repeat: no-repeat;
+    background-size: calc(.7rem + .7vw) calc(1.4rem + 1.4vw);
+    background-position: right 5% bottom 80%;
+} 
+
+
+option {
+    text-transform: capitalize;
+}
+
+.products_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media  only screen  and (max-width: 1000px) {
+    .products_list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+@media  only screen  and (max-width: 500px) {
+    .products_list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    padding: 3rem 3rem;
+    border: 1px solid green;
+}
+
+@media  only screen  and (max-width: 900px) {  
+    .product {
+        margin: 2rem; 
+        padding: 1rem;
+    }
+}
+
+@media  only screen  and (max-width: 500px) {  
+    .product {
+        margin: 2rem 0; 
+        padding: 1rem;
+    }
+}
+
+.product_title {
+    order: 2;
+    margin: 0;
+}
+
+.product_image {
+    order: 1;
+    max-width: 70%;
+    height: auto;
+}
+
+.price {
+    order: 3;
+    margin: 1rem 0;
+}
+
+.add_to_cart {
+    order: 4;
+    background-color: var(--bg-footer);
+    font-family: var(--font);
+    color: var(--main-text-color);
+    border: 1px solid #B0ACAC;
+    font-size: calc(.7rem + 0.5vw);
+    padding: 0.5rem 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
