@@ -344,7 +344,7 @@ footer.main_footer {
 .footer_social {
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: flex-end;
 }
