@@ -24,20 +24,22 @@ function start() {
   const productParent = document.querySelector(".products_list");
 
   function showBulb(bulb) {
-    console.log(bulb);
+    //console.log(bulb);
     const productClone = productTemplate.cloneNode(true);
     productClone.querySelector(".product_title").textContent = bulb.title;
     if (bulb.price_current == bulb.price_regular) {
-        console.log("not sale");
+        //console.log("not sale");
         productClone.querySelector(".sale").classList.add("hidden");
         productClone.querySelector(".price_number").textContent = bulb.price_current;
     } else {
-        console.log("sale");
+        //console.log("sale");
         productClone.querySelector(".sale_price").textContent = bulb.price_regular;
         productClone.querySelector(".price_number").textContent = bulb.price_current;
     }
     productClone.querySelector("img").src = bulb.images[0].link;
     productClone.querySelector("img").alt = bulb.title;
+    productClone.querySelector(".product_link").href = `individual_product.html?id=${bulb._id}`;
+    productClone.querySelector(".title_product_link").href = `individual_product.html?id=${bulb._id}`;
     productParent.appendChild(productClone);
   }
 
@@ -53,46 +55,63 @@ function start() {
       start();
   });
 
-//   living room in different colors
-// document.querySelectorAll(".color").forEach((item) => {addEventListener("click", (e) => {
-//     console.log(e.target.classList[1]);
-// })});
 
+//   living room in different colors
 const colors = document.querySelectorAll(".color");
-colors.forEach((color) => {
-    addEventListener("click", changeColor);
-    console.log(color);
-});
+
+document.querySelector(".color.color_1").addEventListener("click", changeColor);
+document.querySelector(".color.color_2").addEventListener("click", changeColor);
+document.querySelector(".color.color_3").addEventListener("click", changeColor);
+document.querySelector(".color.color_4").addEventListener("click", changeColor);
+document.querySelector(".color.color_5").addEventListener("click", changeColor);
+document.querySelector(".color.color_6").addEventListener("click", changeColor);
+document.querySelector(".color.color_7").addEventListener("click", changeColor);
+document.querySelector(".color.color_8").addEventListener("click", changeColor);
 
 function changeColor(e) {
-    // e.target.removeEventListener("click", changeColor);
+    console.log("changeColor ");
+    
+    const theDiv = e.target;
+    console.log(`the clicked div is ${theDiv}`);
     console.log(e.target.classList[1]);
     e.target.classList.add("highlighted");
     colors.forEach((color) => {
-        if (color !== e.target) {
+      // console.log(color);
+      // console.log(e.target);
+        if (color !== theDiv) {
+          //console.log(color + "is not equal to" + theDiv);
             color.classList.remove("highlighted");
+            color.removeEventListener("click", changeToNoColor);
+            color.addEventListener("click", changeColor);
         }
     });
-    let chosenColor = e.target.classList[1];
-    console.log(chosenColor);
+    const chosenColor = theDiv.classList[1];
+    console.log("the chosen color is " + chosenColor);
     const classes = document.querySelector(".moods").classList;
-    console.log(classes);
+    //console.log(classes);
     if (classes.length == 1) {
         classes.add(chosenColor);
-        console.log(classes);
+        //console.log(classes);
     } else {
         classes.remove(classes[1]);
-        console.log(classes);
+        //console.log(classes);
         classes.add(chosenColor);
     }
-    
-    // e.target.addEventListener("click", (e) => {
-        
-    //     console.log(e.target.classList);
-    //     console.log(classes);
-    //     classes.remove(chosenColor);
-    //     e.target.classList.remove("highlighted");
-    //     console.log(e.target.classList);
-    //     console.log(classes);
-    // });
+
+    theDiv.removeEventListener("click", changeColor);
+    theDiv.addEventListener("click", changeToNoColor);
+}
+
+function changeToNoColor(e) {
+  console.log("changeToNoColor function");
+  console.log(e);
+  console.log(this);
+  const theDiv = e.target;
+  theDiv.classList.remove("highlighted");
+  const moods = document.querySelector(".moods");
+  moods.className = "moods";
+  console.log(moods);
+  console.log(theDiv);
+  theDiv.removeEventListener("click", changeToNoColor);
+  theDiv.addEventListener("click", changeColor);
 }

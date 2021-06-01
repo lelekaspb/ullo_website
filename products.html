@@ -97,7 +97,7 @@
           <div class="select_wrapper">
             <select name="sort" id="sort" class="sort">
               <option value="" selected disabled>Sort by</option>
-              <option value="category">category</option>
+              <option value="category" class="category">category</option>
               <option value="none">none</option>
             </select>
           </div>
@@ -106,13 +106,19 @@
       </section>
       <template class="product_template">
         <article class="product">
-          <h3 class="product_title"></h3>
-          <img src="" alt="" class="product_image">
-          <div class="price">
-            <p class="sale"><span class="sale_price"></span>&nbsp;kr</p>
-            <p>&nbsp;<span class="price_number"></span>&nbsp;kr</p>
+          <a href="" class="product_link">
+            <img src="" alt="" class="product_image">
+          </a>
+          <div class="product_info">
+            <a href="" class="title_product_link">
+              <h3 class="product_title"></h3>
+            </a>
+            <div class="price">
+              <p class="sale"><span class="sale_price"></span>&nbsp;kr</p>
+              <p>&nbsp;<span class="price_number"></span>&nbsp;kr</p>
+            </div>
+            <button class="add_to_cart">add to cart</button>
           </div>
-          <button class="add_to_cart">add to cart</button>
         </article>
       </template>
     </main>
