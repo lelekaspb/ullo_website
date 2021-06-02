@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37" height="28" viewBox="0 0 37 28">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_383" data-name="Rectangle 383" width="37" height="28" transform="translate(746 644)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_385" data-name="Rectangle 385" width="36.056" height="25.592" transform="translate(0.475 0.422)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_15" data-name="Mask Group 15" transform="translate(-746 -644)" clip-path="url(#clip-path)">
+    <g id="wifi_negative" transform="translate(746 644.985)">
+      <g id="Layer_5" data-name="Layer 5">
+        <rect id="Rectangle_384" data-name="Rectangle 384" width="37" height="26.208" transform="translate(0 -0.089)" fill="none"/>
+      </g>
+      <g id="Layer_6" data-name="Layer 6">
+        <g id="Group_285" data-name="Group 285" clip-path="url(#clip-path-2)">
+          <path id="Path_226" data-name="Path 226" d="M36.464,7.9l-.046-.059a25.336,25.336,0,0,0-35.825,0,.395.395,0,0,0,0,.561L3.21,11.02a.392.392,0,0,0,.281.117.4.4,0,0,0,.281-.117,20.816,20.816,0,0,1,29.467,0,.392.392,0,0,0,.278.117.4.4,0,0,0,.281-.117L36.417,8.4a.4.4,0,0,0,.046-.5" fill="#fff"/>
+          <path id="Path_227" data-name="Path 227" d="M18.5,7.351a18.278,18.278,0,0,0-13.009,5.4.4.4,0,0,0,0,.558L8.1,15.916a.395.395,0,0,0,.561,0,13.893,13.893,0,0,1,19.675,0,.4.4,0,0,0,.281.117.392.392,0,0,0,.277-.117L31.509,13.3a.392.392,0,0,0,.117-.278.4.4,0,0,0-.117-.281A18.278,18.278,0,0,0,18.5,7.351" fill="#fff"/>
+          <path id="Path_228" data-name="Path 228" d="M18.5,14.276a11.408,11.408,0,0,0-8.109,3.367.389.389,0,0,0-.114.278.4.4,0,0,0,.114.281L13,20.813a.4.4,0,0,0,.281.117.392.392,0,0,0,.278-.117,6.984,6.984,0,0,1,9.873,0,.395.395,0,0,0,.561,0l2.621-2.621a.4.4,0,0,0,0-.558A11.408,11.408,0,0,0,18.5,14.276" fill="#fff"/>
+          <path id="Path_229" data-name="Path 229" d="M18.5,21.617a3.977,3.977,0,0,0-2.831,1.172.4.4,0,0,0,0,.558L18.226,25.9a.388.388,0,0,0,.278.114.4.4,0,0,0,.281-.114l2.55-2.553a.4.4,0,0,0,0-.558A3.978,3.978,0,0,0,18.5,21.617" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
