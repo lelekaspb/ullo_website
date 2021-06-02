@@ -207,8 +207,8 @@ h1 {
     width: 110%;
     background: url("../assets/icons/sort.svg");
     background-repeat: no-repeat;
-    background-size: calc(.7rem + .7vw) calc(1.4rem + 1.4vw);
-    background-position: right 5% bottom 110%;
+    background-size: calc(.7rem + .7vw) calc(0.7rem + 0.7vw);
+    background-position: right 5% top 70%;
 } 
 
 
