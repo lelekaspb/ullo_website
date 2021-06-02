@@ -43,10 +43,11 @@ function start() {
     productParent.appendChild(productClone);
   }
 
+  //sorting feature
   document.querySelector("#sort").addEventListener("change", (e) => {
       console.log(document.querySelector("#sort").value);
       const sortBy = document.querySelector("#sort").value;
-      if (sortBy !== "none") {
+      if (sortBy !== "") {
         url = `https://kea0209-5a57.restdb.io/rest/ullo-products?fetchchildren=true&sort=${sortBy}&dir=1`;
       } else {
           url = `https://kea0209-5a57.restdb.io/rest/ullo-products?fetchchildren=true`;

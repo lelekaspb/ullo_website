@@ -212,9 +212,9 @@ h1 {
 } 
 
 
-.sort option:not(.sort option:disabled) {
+/* .sort option:not(.sort option:disabled) {
     text-transform: capitalize;
-}
+} */
 
 .products_list {
     display: grid;
