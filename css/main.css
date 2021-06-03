@@ -28,6 +28,7 @@ header {
   width: 100%;
   font-size: 16.5px;
   background: var(--bg-footer);
+  z-index: 10;
 }
 
 .menu_head {
