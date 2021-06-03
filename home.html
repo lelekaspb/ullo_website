@@ -7,6 +7,7 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <title>Ullo</title>
   </head>
   <body>
@@ -75,6 +76,37 @@
         <img id="search_cross" src="assets/icons/cross.svg" alt="Cross icon" />
       </form>
     </header>
+
+    <main>
+      <video autoplay muted loop id="main_video">
+        <source src="assets/videos/main_desktop.mp4" type="video/mp4" />
+      </video>
+      <section class="products">
+        <div class="products_list"></div>
+      </section>
+      <template class="product_template">
+        <article class="product">
+          <a href="" class="product_link">
+            <img src="" alt="" class="product_image" />
+          </a>
+          <div class="product_info">
+            <a href="" class="title_product_link">
+              <h3 class="product_title"></h3>
+            </a>
+            <div class="price">
+              <p class="sale"><span class="sale_price"></span>&nbsp;kr</p>
+              <p>&nbsp;<span class="price_number"></span>&nbsp;kr</p>
+            </div>
+            <button class="add_to_cart">add to cart</button>
+          </div>
+        </article>
+      </template>
+
+      <section class="gradient compatible">
+        <h2>Compatible with</h2>
+      </section>
+    </main>
+
     <footer class="main_footer">
       <div class="footer_wrapper">
         <section class="footer_links">
@@ -164,5 +196,6 @@
       </section>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
   </body>
 </html>
