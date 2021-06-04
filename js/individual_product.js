@@ -2,11 +2,17 @@ const bigImageWidth = document.querySelector(".image_wrapper").offsetWidth;
 console.log(bigImageWidth);
 document.querySelector(".product").style.setProperty("--dynamic-width", `${bigImageWidth}px`);
 
+const sellpointVisualWidth = document.querySelector(".sellpoint_visual").offsetWidth;
+console.log(sellpointVisualWidth);
+document.querySelector(".sellpoints").style.setProperty("--sellpoint-width", `${sellpointVisualWidth}px`);
+
 function countDynamicWidth() {
     const bigImageWidth = document.querySelector(".image_wrapper").offsetWidth;
-    //console.log(bigImageWidth);
     document.querySelector(".product").style.setProperty("--dynamic-width", `${bigImageWidth}px`);
+    const sellpointVisualWidth = document.querySelector(".sellpoint_visual").offsetWidth;
+    document.querySelector(".sellpoints").style.setProperty("--sellpoint-width", `${sellpointVisualWidth}px`);
 }
+
 
 
 window.onresize = countDynamicWidth;
@@ -88,3 +94,19 @@ const url =
     const bigImage = document.querySelector(".big_image");
     bigImage.src = smallImage.src;
   }
+
+
+  // change content based on the screen size
+  // stop autoplaying on mobile devices
+let mql = window.matchMedia("(max-width: 450px)");
+
+// mql.addEventListener( "change", (e) => {
+if (mql.matches) {
+  console.log("This is a narrow screen — less than 450px wide.");
+  document.querySelector(".flexibility .sellpoint_text > p").textContent = "With Ullo remote you can take the light with you.";
+  document.querySelector(".colors .sellpoint_text > p").textContent = "With Ullo you get 16 million unique colors per unit of light";
+} else {
+  /* the viewport is more than than 750 pixels wide */
+  console.log("This is a wide screen — more than 450px wide.");
+}
+// })

@@ -476,7 +476,7 @@ h2 {
 
 .compatible_with_list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -485,4 +485,327 @@ h2 {
     width: calc(6rem + 6vw);
     height: auto;
     margin: 1rem 0;
+}
+
+
+/* selling points section */
+.sellpoints {
+    color: var(--main-text-color);
+    margin-top: calc(2rem + 5vw);
+}
+
+/* quality and colors */
+.sellpoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    margin: calc(3rem + 7vw) 0;
+}
+
+.sellpoint.quality {
+    margin: calc(3rem + 2vw) 0;
+}
+
+@media  only screen  and (max-width: 700px) {
+    .sellpoint {
+        margin: calc(3rem + 3vw) 2rem;
+    }
+}
+
+@media  only screen  and (max-width: 500px) {
+    .sellpoint {
+        grid-template-rows: 0.3fr 1fr 0.3fr;
+        margin: 3rem 1rem;
+    }
+}
+
+@media  only screen  and (max-width: 430px) {
+    .to_hide {
+        display: none;
+    }
+    .flexibility .to_hide {
+        display: none;
+    }
+}
+
+.sellpoint_info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-column: 1/ span 6;
+    grid-row: 1 / span 3;
+    box-sizing: border-box;
+    background: #ffffff;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-left: none;
+    border-radius: 0 2rem 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+@media  only screen  and (max-width: 1200px) {
+    .sellpoint_info {
+        grid-column: 1/ span 7;
+    } 
+}
+
+@media  only screen  and (max-width: 700px) {
+    .sellpoint_info {
+        grid-column: 1/ -1;
+        border-left: solid 5px transparent;
+        border-radius: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    } 
+}
+
+
+.sellpoint_info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: linear-gradient(
+        rgb(60, 219, 192),
+        rgb(108, 234, 224),
+        rgb(136, 228, 236),
+        rgb(181, 220, 245)
+    );
+}
+
+@media  only screen  and (max-width: 430px) {
+    .sellpoint_info {
+        border: solid 3px transparent;
+    }
+    .sellpoint_info::before {
+        margin: -3px;
+    }
+}
+
+
+.sellpoint_title {
+    font-size: calc(1.2rem + 1vw);
+    font-weight: 600;
+    position: absolute;
+    top: calc(-1 * (2rem + 2vw));
+    left: 50%;
+    margin-left: -4rem;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    color: var(--main-text-color);
+}
+
+.colors .sellpoint_title {
+    left: 45%;
+}
+
+.sellpoint_text {
+    grid-column: 3 / span 3;
+    font-size: calc(0.8rem + 0.5vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  only screen  and (max-width: 700px) {
+    .sellpoint_text {
+        grid-column: 1 / span 4;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
+}
+
+@media  only screen  and (max-width: 600px) {
+    .sellpoint_text {
+        grid-column: 1 / span 5;
+        padding-left: 2rem;
+        font-size: calc(0.7rem + 0.6vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media  only screen  and (max-width: 430px) {
+    .sellpoint_text {
+        grid-column: 1 / span 5;
+        padding-left: 1rem;
+       
+    }
+}
+
+
+.sellpoint_visual {
+    background-color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0px 10px 30px var(--pantone);
+    grid-column: 5 / span 4;
+    grid-row: 2 / span 1;
+    z-index: 2;
+    width: 50%;
+    padding-top: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media  only screen  and (max-width: 1200px) {
+    .sellpoint_visual {
+        grid-column: 6 / span 4;
+    }
+}
+
+
+.sellpoint_icon {
+    max-width: 18rem;
+    width: calc(var(--sellpoint-width) * 0.7);
+    /* width: 100%; */
+    height: calc(var(--sellpoint-width) * 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: calc(-1 * ((var(--sellpoint-width) * 0.7) / 2));
+    margin-top: calc(-1 * ((var(--sellpoint-width) * 0.7) / 2));
+}
+
+
+/* flexibility */
+.flexibility .sellpoint_info {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-column: 4/ span 6;
+    grid-row: 1 / span 3;
+    box-sizing: border-box;
+    background: #ffffff;
+    background-clip: padding-box;
+    border: solid 5px transparent;
+    border-right: none;
+    border-radius:  2rem 0 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+@media  only screen  and (max-width: 1200px) {
+    .flexibility  .sellpoint_info {
+        grid-column: 3 / span 7;
+    } 
+}
+
+@media  only screen  and (max-width: 700px) {
+    .flexibility .sellpoint_info {
+        grid-column: 1/ -1;
+        border-left: solid 5px transparent;
+        border-radius: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    } 
+}
+
+
+.flexibility  .sellpoint_info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -5px;
+    border-radius: inherit;
+    background: linear-gradient(
+        rgb(60, 219, 192),
+        rgb(108, 234, 224),
+        rgb(136, 228, 236),
+        rgb(181, 220, 245)
+    );
+}
+
+@media  only screen  and (max-width: 430px) {
+    .flexibility .sellpoint_info {
+        border: solid 3px transparent;
+    }
+    .flexibility .sellpoint_info::before {
+        margin: -3px;
+    }
+}
+
+.flexibility .sellpoint_text {
+    grid-column: 4 / span 4;
+    font-size: calc(0.8rem + 0.5vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media  only screen  and (max-width: 700px) {
+    .flexibility .sellpoint_text {
+        grid-column: 4 / span 5;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media  only screen  and (max-width: 600px) {
+    .flexibility .sellpoint_text {
+        grid-column: 4 / span 5;
+        padding-left: 2rem;
+        font-size: calc(0.7rem + 0.6vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media  only screen  and (max-width: 430px) {
+    .flexibility .sellpoint_text {
+        grid-column: 4 / span 4;
+        padding-left: 1rem;
+       
+    }
+}
+
+
+.flexibility .sellpoint_visual {
+    background-color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0px 10px 30px var(--pantone);
+    /* grid-column: 6 / 2; */
+    grid-column: 2/ span 4;
+    grid-row: 2 / span 1;
+    z-index: 2;
+    width: 50%;
+    padding-top: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media  only screen  and (max-width: 1200px) {
+    .flexibility .sellpoint_visual {
+        grid-column: 1 / span 4;
+    }
+}
+
+
+.flexibility .sellpoint_icon {
+    max-width: 18rem;
+    width: calc(var(--sellpoint-width) * 0.7);
+    /* width: 100%; */
+    height: calc(var(--sellpoint-width) * 0.7);
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin-left: calc(-1 * ((var(--sellpoint-width) * 0.7) / 2));
+    margin-top: calc(-1 * ((var(--sellpoint-width) * 0.7) / 2));
 }
