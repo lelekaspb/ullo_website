@@ -183,14 +183,10 @@ main {
 
 h1 {
     margin: 0;
-    /* font-size: 45px; */
     font-size: calc(2rem + 1vw);
     font-weight: 500;
 }
 
-/* .select_wrapper {
-    padding: 1rem 1.5rem;
-} */
 
 .sort {
     font-size: calc(0.7rem + 0.7vw);
@@ -210,11 +206,6 @@ h1 {
     background-size: calc(.7rem + .7vw) calc(0.7rem + 0.7vw);
     background-position: right 5% top 70%;
 } 
-
-
-/* .sort option:not(.sort option:disabled) {
-    text-transform: capitalize;
-} */
 
 .products_list {
     display: grid;
@@ -262,6 +253,7 @@ h1 {
         margin: 2rem 1rem; 
         padding: 1rem 0;
         padding-bottom: 2rem;
+        border-radius: 5rem;
     }
 }
 

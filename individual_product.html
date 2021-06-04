@@ -6,9 +6,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/individual_product.css">
     <title>The product</title>
   </head>
   <body>
+    <header>
+      <nav class="menu_head">
+        <a class="menu_logo" href="home.html">
+          <img src="assets/icons/logo_ullo.svg" alt="Ullo logo" />
+        </a>
+        <div class="menu_text" id="menu_text_id">
+          <ul>
+            <li ><a href="home.html">Home</a></li>
+            <li class="menu_dropdown active">
+              <a href="products.html">Products</a>
+              <img
+                id="menu_drop1"
+                class="hidden"
+                src="assets/icons/menu_chevron.svg"
+                alt="Icon of an arrow"
+              />
+              <ul class="hidden">
+                <li><a href="individual_product.html?id=60a28f1df7c7ed16000c164a">Glow E27</a></li>
+                <li><a href="individual_product.html?id=60a29074f7c7ed16000c166f">Spot GU10</a></li>
+                <li><a href="individual_product.html?id=60a290fef7c7ed16000c1690">Torch E14</a></li>
+                <li><a href="individual_product.html?id=60a291b6f7c7ed16000c16aa">Flex strip</a></li>
+                <li><a href="individual_product.html?id=60a2926af7c7ed16000c16c3">Remote</a></li>
+                <li><a href="individual_product.html?id=60a29327f7c7ed16000c16eb">Starter kit</a></li>
+              </ul>
+            </li>
+            <li><a href="get_started.html">Get started</a></li>
+            <li class="menu_dropdown">
+              <a href="about_ullo.html">About Ullo</a>
+              <img
+                id="menu_drop2"
+                class="hidden"
+                src="assets/icons/menu_chevron.svg"
+                alt="Icon of a downwards facing arrow"
+              />
+              <ul class="hidden">
+                <li><a href="our_story.html">Our story</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a href="green_initiative.html">Green initiative</a></li>
+                <li><a href="partners.html">Our partners</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu_search">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </div>
+        <a class="menu_cart" href="cart.html">
+          <img src="assets/icons/cart.svg" alt="Shopping cart" />
+        </a>
+        <div id="hamburger" class="ham hidden"></div>
+      </nav>
+      <form class="search_box hidden" action="#" method="get" role="search">
+        <input
+          type="text"
+          placeholder="Type to search"
+          name="query"
+          value=""
+          required
+        />
+        <button id="search_button" type="submit">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </button>
+        <img id="search_cross" src="assets/icons/cross.svg" alt="Cross icon" />
+      </form>
+    </header>
+    <main>
+      <section class="product">
+        <article class="product_info">
+          <h1 class="title"></h1>
+          <h3 class="price"><span></span> kr</h3>
+          <p class="description"></p>
+            <div class="specification">
+              <div class="specification_item">
+                <img src="assets/icons/specification/lumens.svg" alt="400 lumens icon_SoMe" class="specification_icon">
+                <span>400 lumens</span>
+              </div>
+              <div class="specification_item">
+                <img src="assets/icons/specification/watts.svg" alt="4 watts icon" class="specification_icon">
+                <span>4 watts</span>
+              </div>
+              <div class="specification_item">
+                <img src="assets/icons/specification/colors.svg" alt="16 million colors icon" class="specification_icon">
+                <span>16 mio. colors</span>
+              </div>
+              <div class="specification_item">
+                <img src="assets/icons/specification/wifi.svg" alt="zig bee 3.0 icon" class="specification_icon">
+                <span>ZigBee 3.0</span>
+              </div>
+            </div>
+            <div class="quantity_wrapper">
+              <span class="btn_quantity minus">-</span>
+              <input type="number" class="quantity" value="1" min="1" max="10">
+              <span class="btn_quantity plus">+</span>
+            </div>
+            <div class="buttons">
+              <button class="add_to_cart">Add to cart</button>
+              <a href="products.html" class="back_shopping">Continue shopping</a>
+            </div>
+        </article>
+        <article class="product_images">
+          <div class="image_wrapper">
+            <img src="" alt="" class="big_image">
+            <!-- <div class="small_image_wrapper image_1">
+              <img src="assets/images/glow_E27_1.png" alt="" class="small_image ">
+            </div>
+            <div class="small_image_wrapper image_2">
+              <img src="assets/images/glow_E27_1.png" alt="" class="small_image ">
+            </div>
+            <div class="small_image_wrapper image_3">
+              <img src="assets/images/glow_E27_1.png" alt="" class="small_image ">
+            </div>
+            <div class="small_image_wrapper image_4">
+              <img src="assets/images/glow_E27_1.png" alt="" class="small_image ">
+            </div> -->
+          </div>
+        </article>
+      </section>
+      <section class="compatible_with">
+        <h2>Compatible with</h2>
+        <div class="compatible_with_list">
+          <img src="assets/icons/compatible_with/amazon_alexa_black.svg" alt="amazon alexa logo" class="compatible_with_logo">
+          <img src="assets/icons/compatible_with/apple_homekit_black.svg" alt="apple homekit logo" class="compatible_with_logo">
+          <img src="assets/icons/compatible_with/google_assistant_black.svg" alt="google assistant logo" class="compatible_with_logo">
+          <img src="assets/icons/compatible_with/lifx_black.svg" alt="lifx logo" class="compatible_with_logo">
+          <img src="assets/icons/compatible_with/philips_hue_black.svg" alt="philips-hue logo" class="compatible_with_logo">
+        </div>
+      </section>
+      <template class="small_image_template">
+        <div class="small_image_wrapper">
+          <img src="" alt="" class="small_image" onclick="changeImage(this)">
+        </div>
+      </template>
+    </main>
+    <footer class="main_footer">
+      <div class="footer_wrapper">
+        <section class="footer_links">
+          <h4>Site links</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </section>
+        <section class="footer_subscribe">
+          <h4>Newsletters</h4>
+          <form action="#" class="form_subscribe">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+            <!-- <input type="submit" value="&rarr;" /> -->
+            <button type="submit">
+              <img src="assets/icons/rarr.svg" alt="submit button" />
+            </button>
+          </form>
+        </section>
+        <section class="footer_payment">
+          <img
+            src="assets/icons/google_pay.svg"
+            alt="google pay icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/paypal.svg"
+            alt="paypal icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/visa.svg"
+            alt="visa icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/mastercard.svg"
+            alt="mastercard icon"
+            class="icon_payment"
+          />
+        </section>
+        <section class="footer_social">
+          <a href="https://www.facebook.com/ullo.dk/" target="_blank">
+            <img
+              src="assets/icons/Ullofacebook.png"
+              alt="facebook icon"
+              class="icon_SoMe"
+            />
+          </a>
+          <a href="https://www.instagram.com/ullo.official/" target="_blank">
+            <img
+              src="assets/icons/Ulloinstagram.png"
+              alt="instagram icon"
+              class="icon_SoMe"
+          /></a>
+          <a
+            href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fullo.dk"
+            target="_blank"
+          >
+            <img
+              src="assets/icons/ullotwitter.png"
+              alt="twitter icon"
+              class="icon_SoMe"
+          /></a>
+        </section>
+        <section class="footer_general">
+          <p>
+            Copyright &#169; Ullo, Powered by Shopify <br />
+            Nørrebrogade 225 5, 2200 København N &nbsp; CVR: 41797584 <br />
+            <a href="mailto:hej@ullo.dk">hej@ullo.dk</a>
+          </p>
+        </section>
+      </div>
+      <section class="modal_subscribe" id="modal_subscribe">
+        <article class="modal-content">
+          <span class="close">&times;</span>
+          <p>Thank you!</p>
+          <p>We will keep you posted.</p>
+        </article>
+      </section>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="js/individual_product.js"></script>
   </body>
 </html>
