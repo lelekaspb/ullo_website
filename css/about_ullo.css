@@ -46,8 +46,8 @@ picture {
     text-decoration: none;
     position: relative;
     color: var(--pantone);
-    font-size: calc(0.6rem + 0.6vw);
-    font-weight: 600;
+    font-size: calc(0.7rem + 0.6vw);
+    font-weight: 500;
 }
 
 
