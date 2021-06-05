@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font: "Poppins", sans-serif;
+  --main-text-color: #3a3a3a;
+  --pantone: #3cdbc0;
+}
+
+.black {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background: var(--main-text-color);
+  z-index: 20;
+  margin-top: -3.8rem;
+}
+
+button.brighten {
+  font-family: var(--font);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--pantone);
+  width: 200px;
+  border: none;
+  box-shadow: 0 0 5px 4px #3cdbc08a;
+  border-radius: 11px;
+  padding: 6px;
+  background: #403e3e;
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button.brighten:hover {
+  box-shadow: 0 0 10px 5px #3cdbc08a;
+}
+
+.bulb {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background-color: rgb(214, 214, 214);
+  border-radius: 50%;
+  top: 19.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: glowing 3s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px 4px #3cdbc08a;
+  }
+  50% {
+    box-shadow: 0 0 15px 9px #3cdbc08a;
+  }
+  100% {
+    box-shadow: 0 0 5px 4px #3cdbc08a;
+  }
+}
+
+.bulb::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 120px solid rgb(214, 214, 214);
+  border-radius: 50%;
+  margin-top: -3.75rem;
+}
+
+.bulb::after {
+  content: "";
+  display: block;
+  background: repeating-linear-gradient(
+    180deg,
+    #bbb,
+    #bbb 20%,
+    #999 20%,
+    #999 40%
+  );
+  width: 5.28rem;
+  height: 4rem;
+  margin-top: -8rem;
+  margin-left: 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.opacity {
+  animation: opac 1.7s ease-in;
+}
+
+@keyframes opac {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.bulb_clicked {
+  background-color: #a3d8cf;
+  animation: move_up 1.7s ease-in;
+  transform-origin: right;
+  margin-left: 0.5rem;
+  box-shadow: 0 0 15px 10px #3cdbc08a;
+}
+
+.bulb_clicked::before {
+  border-bottom: 120px solid #a3d8cf;
+}
+
+@keyframes move_up {
+  100% {
+    top: -40%;
+    transform: scale(2);
+  }
+}

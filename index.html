@@ -5,10 +5,357 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Ullo</title>
   </head>
+
   <body>
+    <header>
+      <nav class="menu_head">
+        <a class="menu_logo" href="index.html">
+          <img src="assets/icons/logo_ullo.svg" alt="Ullo logo" />
+        </a>
+        <div class="menu_text" id="menu_text_id">
+          <ul>
+            <li class="active"><a href="home.html">Home</a></li>
+            <li class="menu_dropdown">
+              <a href="products.html">Products</a>
+              <img
+                id="menu_drop1"
+                class="hidden"
+                src="assets/icons/menu_chevron.svg"
+                alt="Icon of an arrow"
+              />
+              <ul class="hidden">
+                <li>
+                  <a href="individual_product.html?id=60a28f1df7c7ed16000c164a"
+                    >Glow E27</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a29074f7c7ed16000c166f"
+                    >Spot GU10</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a290fef7c7ed16000c1690"
+                    >Torch E14</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a291b6f7c7ed16000c16aa"
+                    >Flex strip</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.htl?mid=60a2926af7c7ed16000c16c3"
+                    >Remote</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a29327f7c7ed16000c16eb"
+                    >Starter kit</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="get_started.html">Get started</a></li>
+            <li class="menu_dropdown">
+              <a href="about_ullo.html">About Ullo</a>
+              <img
+                id="menu_drop2"
+                class="hidden"
+                src="assets/icons/menu_chevron.svg"
+                alt="Icon of a downwards facing arrow"
+              />
+              <ul class="hidden">
+                <li><a href="our_story.html">Our story</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a href="green_initiative.html">Green initiative</a></li>
+                <li><a href="partners.html">Our partners</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu_search">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </div>
+        <a class="menu_cart" href="cart.html">
+          <img src="assets/icons/cart.svg" alt="Shopping cart" />
+        </a>
+        <div id="hamburger" class="ham hidden"></div>
+      </nav>
+      <form class="search_box hidden" action="#" method="get" role="search">
+        <input
+          type="text"
+          placeholder="Type to search"
+          name="query"
+          value=""
+          required
+        />
+        <button id="search_button" type="submit">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </button>
+        <img id="search_cross" src="assets/icons/cross.svg" alt="Cross icon" />
+      </form>
+    </header>
+
+    <main>
+      <div class="black">
+        <div class="bulb"></div>
+        <button class="brighten">Brighten up</button>
+      </div>
+      <video autoplay muted loop id="desktop_video">
+        <source src="assets/videos/main_desktop.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop id="mobile_video">
+        <source src="assets/videos/main_mobile.mp4" type="video/mp4" />
+      </video>
+      <section class="products">
+        <div class="products_list"></div>
+      </section>
+      <template class="product_template">
+        <article class="product">
+          <a href="" class="product_link">
+            <img src="" alt="" class="product_image" />
+          </a>
+          <div class="product_info">
+            <a href="" class="title_product_link">
+              <h3 class="product_title"></h3>
+            </a>
+            <div class="price">
+              <p class="sale"><span class="sale_price"></span>&nbsp;kr</p>
+              <p>&nbsp;<span class="price_number"></span>&nbsp;kr</p>
+            </div>
+            <button class="add_to_cart">add to cart</button>
+          </div>
+        </article>
+      </template>
+
+      <section class="gradient compatible">
+        <h2>Compatible with</h2>
+        <div>
+          <img src="assets/icons/philips_hue.svg" alt="Philips Hue logo" />
+          <img src="assets/icons/apple_homekit.svg" alt="Apple Homekit logo" />
+          <img src="assets/icons/amazon_alexa.svg" alt="Amazon Alexa logo" />
+          <img src="assets/icons/lifx.svg" alt="Lifx logo" />
+        </div>
+      </section>
+      <section class="remote">
+        <img
+          src="assets/images/ullo_remote_home.jpg"
+          alt="Set up infographics"
+        />
+      </section>
+      <section class="slideshow">
+        <img
+          id="slide"
+          src="assets/images/mood_relaxing.jpg"
+          alt="Mood lighting"
+        />
+        <img
+          id="arrow_left"
+          src="assets/icons/arrow_mood.svg"
+          alt="Arrow facing to the left"
+        />
+        <img
+          id="arrow_right"
+          src="assets/icons/arrow_mood.svg"
+          alt="Arrow facing to the right"
+        />
+      </section>
+      <section class="what_is_ullo">
+        <h2>What is Ullo</h2>
+        <div>
+          <a href="our_story.html" class="what">
+            <img
+              src="assets/icons/fair_price_home.svg"
+              alt="icon indicating fair price"
+            />
+            <h4>Fair price</h4>
+          </a>
+          <a href="our_story.html" class="what">
+            <img
+              src="assets/icons/user_friendly_home.svg"
+              alt="icon indicating user friendliness"
+            />
+            <h4>User friendly</h4>
+          </a>
+          <a href="our_story.html" class="what">
+            <img
+              src="assets/icons/sustainability_home.png"
+              alt="Sustainability indicating icon"
+            />
+            <h4>Sustainability</h4>
+          </a>
+        </div>
+      </section>
+      <section class="gradient">
+        <h2>You get that with Ullo</h2>
+        <div class="you_get">
+          <div class="you_get_box">
+            <img src="assets/icons/quality_home.svg" alt="Icon for quality" />
+            <div>
+              <h3>Quality</h3>
+              <p>
+                Our products are designed with a focus on high quality and long
+                life. It's good for you and the environment.
+              </p>
+            </div>
+          </div>
+          <div class="you_get_box">
+            <img
+              src="assets/icons/flexibility_home.svg"
+              alt="Icon for flexibility"
+            />
+            <div>
+              <h3>Flexibility</h3>
+              <p>
+                With Ullo Remote you can control your light without the use of
+                WiFi. You can therefore also take the light with you.
+              </p>
+            </div>
+          </div>
+          <div class="you_get_box">
+            <img src="assets/icons/colors_home.svg" alt="Icon for colors" />
+            <div>
+              <h3>16 mio. colors</h3>
+              <p>
+                With 16 million unique colors per light unit, you can count on
+                near-infinite color combinations in your home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="support">
+        <h2>Support</h2>
+        <div>
+          <div>
+            <img src="assets/icons/messenger_icon.svg" alt="Messenger icon" />
+            <h4>Contact us on Messenger</h4>
+            <p>Response time: within 24 hours.</p>
+            <a href="https://m.me/ullo.dk" target="_blank">Chat with us</a>
+          </div>
+          <div>
+            <img src="assets/icons/email_icon.svg" alt="Email icon" />
+            <h4>Send us an email</h4>
+            <p>Response time: within 2 working days.</p>
+            <a href="mailto:hej@ullo.dk" target="_blank">Write to us</a>
+          </div>
+        </div>
+      </section>
+      <section class="gradient forest">
+        <div>
+          <a href="https://ecologi.com/ullo" target="_blank"
+            >Visit our forest</a
+          >
+          <p>
+            It is important that you as a customer know that there is action
+            behind our words when we say we plant one tree per unit sold. Thanks
+            to a collaboration with Ecologi, you can follow your trees and the
+            rest of our forest.
+          </p>
+        </div>
+        <div>
+          <img src="assets/icons/ecologi.svg" alt="Ecologi icon" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="main_footer">
+      <div class="footer_wrapper">
+        <section class="footer_links">
+          <h4>Site links</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </section>
+        <section class="footer_subscribe">
+          <h4>Newsletters</h4>
+          <form action="#" class="form_subscribe">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+            <!-- <input type="submit" value="&rarr;" /> -->
+            <button type="submit">
+              <img src="assets/icons/rarr.svg" alt="submit button" />
+            </button>
+          </form>
+        </section>
+        <section class="footer_payment">
+          <img
+            src="assets/icons/google_pay.svg"
+            alt="google pay icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/paypal.svg"
+            alt="paypal icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/visa.svg"
+            alt="visa icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/mastercard.svg"
+            alt="mastercard icon"
+            class="icon_payment"
+          />
+        </section>
+        <section class="footer_social">
+          <a href="https://www.facebook.com/ullo.dk/" target="_blank">
+            <img
+              src="assets/icons/Ullofacebook.png"
+              alt="facebook icon"
+              class="icon_SoMe"
+            />
+          </a>
+          <a href="https://www.instagram.com/ullo.official/" target="_blank">
+            <img
+              src="assets/icons/Ulloinstagram.png"
+              alt="instagram icon"
+              class="icon_SoMe"
+          /></a>
+          <a
+            href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fullo.dk"
+            target="_blank"
+          >
+            <img
+              src="assets/icons/ullotwitter.png"
+              alt="twitter icon"
+              class="icon_SoMe"
+          /></a>
+        </section>
+        <section class="footer_general">
+          <p>
+            Copyright &#169; Ullo, Powered by Shopify <br />
+            Nørrebrogade 225 5, 2200 København N &nbsp; CVR: 41797584 <br />
+            <a href="mailto:hej@ullo.dk">hej@ullo.dk</a>
+          </p>
+        </section>
+      </div>
+      <section class="modal_subscribe" id="modal_subscribe">
+        <article class="modal-content">
+          <span class="close">&times;</span>
+          <p>Thank you!</p>
+          <p>We will keep you posted.</p>
+        </article>
+      </section>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
