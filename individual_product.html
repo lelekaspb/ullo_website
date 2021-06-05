@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/individual_product.css">
+    <link rel="stylesheet" href="css/individual_product.css" />
     <title>The product</title>
   </head>
   <body>
@@ -17,7 +18,7 @@
         </a>
         <div class="menu_text" id="menu_text_id">
           <ul>
-            <li ><a href="home.html">Home</a></li>
+            <li><a href="home.html">Home</a></li>
             <li class="menu_dropdown active">
               <a href="products.html">Products</a>
               <img
@@ -27,12 +28,36 @@
                 alt="Icon of an arrow"
               />
               <ul class="hidden">
-                <li><a href="individual_product.html?id=60a28f1df7c7ed16000c164a">Glow E27</a></li>
-                <li><a href="individual_product.html?id=60a29074f7c7ed16000c166f">Spot GU10</a></li>
-                <li><a href="individual_product.html?id=60a290fef7c7ed16000c1690">Torch E14</a></li>
-                <li><a href="individual_product.html?id=60a291b6f7c7ed16000c16aa">Flex strip</a></li>
-                <li><a href="individual_product.html?id=60a2926af7c7ed16000c16c3">Remote</a></li>
-                <li><a href="individual_product.html?id=60a29327f7c7ed16000c16eb">Starter kit</a></li>
+                <li>
+                  <a href="individual_product.html?id=60a28f1df7c7ed16000c164a"
+                    >Glow E27</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a29074f7c7ed16000c166f"
+                    >Spot GU10</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a290fef7c7ed16000c1690"
+                    >Torch E14</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a291b6f7c7ed16000c16aa"
+                    >Flex strip</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a2926af7c7ed16000c16c3"
+                    >Remote</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a29327f7c7ed16000c16eb"
+                    >Starter kit</a
+                  >
+                </li>
               </ul>
             </li>
             <li><a href="get_started.html">Get started</a></li>
@@ -81,37 +106,53 @@
           <h1 class="title"></h1>
           <h3 class="price"><span></span> kr</h3>
           <p class="description"></p>
-            <div class="specification">
-              <div class="specification_item">
-                <img src="assets/icons/specification/lumens.svg" alt="400 lumens icon_SoMe" class="specification_icon">
-                <span>400 lumens</span>
-              </div>
-              <div class="specification_item">
-                <img src="assets/icons/specification/watts.svg" alt="4 watts icon" class="specification_icon">
-                <span>4 watts</span>
-              </div>
-              <div class="specification_item">
-                <img src="assets/icons/specification/colors.svg" alt="16 million colors icon" class="specification_icon">
-                <span>16 mio. colors</span>
-              </div>
-              <div class="specification_item">
-                <img src="assets/icons/specification/wifi.svg" alt="zig bee 3.0 icon" class="specification_icon">
-                <span>ZigBee 3.0</span>
-              </div>
+          <div class="specification">
+            <div class="specification_item">
+              <img
+                src="assets/icons/specification/lumens.svg"
+                alt="400 lumens icon_SoMe"
+                class="specification_icon"
+              />
+              <span>400 lumens</span>
             </div>
-            <div class="quantity_wrapper">
-              <span class="btn_quantity minus">-</span>
-              <input type="number" class="quantity" value="1" min="1" max="10">
-              <span class="btn_quantity plus">+</span>
+            <div class="specification_item">
+              <img
+                src="assets/icons/specification/watts.svg"
+                alt="4 watts icon"
+                class="specification_icon"
+              />
+              <span>4 watts</span>
             </div>
-            <div class="buttons">
-              <button class="add_to_cart">Add to cart</button>
-              <a href="products.html" class="back_shopping">Continue shopping</a>
+            <div class="specification_item">
+              <img
+                src="assets/icons/specification/colors.svg"
+                alt="16 million colors icon"
+                class="specification_icon"
+              />
+              <span>16 mio. colors</span>
             </div>
+            <div class="specification_item">
+              <img
+                src="assets/icons/specification/wifi.svg"
+                alt="zig bee 3.0 icon"
+                class="specification_icon"
+              />
+              <span>ZigBee 3.0</span>
+            </div>
+          </div>
+          <div class="quantity_wrapper">
+            <span class="btn_quantity minus">-</span>
+            <input type="number" class="quantity" value="1" min="1" max="10" />
+            <span class="btn_quantity plus">+</span>
+          </div>
+          <div class="buttons">
+            <button class="add_to_cart">Add to cart</button>
+            <a href="products.html" class="back_shopping">Continue shopping</a>
+          </div>
         </article>
         <article class="product_images">
           <div class="image_wrapper">
-            <img src="" alt="" class="big_image">
+            <img src="" alt="" class="big_image" />
             <!-- <div class="small_image_wrapper image_1">
               <img src="assets/images/glow_E27_1.png" alt="" class="small_image ">
             </div>
@@ -130,11 +171,27 @@
       <section class="compatible_with">
         <h2>Compatible with</h2>
         <div class="compatible_with_list">
-          <img src="assets/icons/compatible_with/amazon_alexa_black.svg" alt="amazon alexa logo" class="compatible_with_logo">
-          <img src="assets/icons/compatible_with/apple_homekit_black.svg" alt="apple homekit logo" class="compatible_with_logo">
+          <img
+            src="assets/icons/compatible_with/amazon_alexa_black.svg"
+            alt="amazon alexa logo"
+            class="compatible_with_logo"
+          />
+          <img
+            src="assets/icons/compatible_with/apple_homekit_black.svg"
+            alt="apple homekit logo"
+            class="compatible_with_logo"
+          />
           <!-- <img src="assets/icons/compatible_with/google_assistant_black.svg" alt="google assistant logo" class="compatible_with_logo"> -->
-          <img src="assets/icons/compatible_with/lifx_black.svg" alt="lifx logo" class="compatible_with_logo">
-          <img src="assets/icons/compatible_with/philips_hue_black.svg" alt="philips-hue logo" class="compatible_with_logo">
+          <img
+            src="assets/icons/compatible_with/lifx_black.svg"
+            alt="lifx logo"
+            class="compatible_with_logo"
+          />
+          <img
+            src="assets/icons/compatible_with/philips_hue_black.svg"
+            alt="philips-hue logo"
+            class="compatible_with_logo"
+          />
         </div>
       </section>
       <section class="sellpoints">
@@ -143,42 +200,66 @@
           <div class="sellpoint_info">
             <h3 class="sellpoint_title">Quality</h3>
             <div class="sellpoint_text">
-              <p >Our products are designed with a focus on high quality and long life. 
-                <span class="to_hide">It's good for you and good for the environment.</span></p>
+              <p>
+                Our products are designed with a focus on high quality and long
+                life.
+                <span class="to_hide"
+                  >It's good for you and good for the environment.</span
+                >
+              </p>
             </div>
           </div>
           <div class="sellpoint_visual">
-            <img src="assets/icons/Ulloiconquality2.png" alt="quality icon" class="sellpoint_icon">
+            <img
+              src="assets/icons/Ulloiconquality2.png"
+              alt="quality icon"
+              class="sellpoint_icon"
+            />
           </div>
         </article>
         <article class="sellpoint flexibility">
           <div class="sellpoint_info">
             <h3 class="sellpoint_title">Flexibity</h3>
             <div class="sellpoint_text">
-              <p >With Ullo Remote you have the ability to control your light without the use of WiFi.
-                <span class="to_hide">You can therefore also take the light with you.</span></p>
+              <p>
+                With Ullo Remote you have the ability to control your light
+                without the use of WiFi.
+                <span class="to_hide"
+                  >You can therefore also take the light with you.</span
+                >
+              </p>
             </div>
           </div>
           <div class="sellpoint_visual">
-            <img src="assets/icons/versatilityicon3.png" alt="quality icon" class="sellpoint_icon">
+            <img
+              src="assets/icons/versatilityicon3.png"
+              alt="quality icon"
+              class="sellpoint_icon"
+            />
           </div>
         </article>
         <article class="sellpoint colors">
           <div class="sellpoint_info">
             <h3 class="sellpoint_title">16 mio. colors</h3>
             <div class="sellpoint_text">
-              <p >With 16 million unique colors per unit of light, you can count on near-infinite color combinations in your home.
+              <p>
+                With 16 million unique colors per unit of light, you can count
+                on near-infinite color combinations in your home.
               </p>
             </div>
           </div>
           <div class="sellpoint_visual">
-            <img src="assets/icons/colorhue2.png" alt="quality icon" class="sellpoint_icon">
+            <img
+              src="assets/icons/colorhue2.png"
+              alt="quality icon"
+              class="sellpoint_icon"
+            />
           </div>
         </article>
       </section>
       <template class="small_image_template">
         <div class="small_image_wrapper">
-          <img src="" alt="" class="small_image" onclick="changeImage(this)">
+          <img src="" alt="" class="small_image" onclick="changeImage(this)" />
         </div>
       </template>
     </main>
