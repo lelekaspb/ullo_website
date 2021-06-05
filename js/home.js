@@ -49,3 +49,33 @@ function showBulb(bulb) {
   ).href = `individual_product.html?id=${bulb._id}`;
   productParent.appendChild(productClone);
 }
+
+let index = 0;
+let moods = [
+  "assets/images/mood_relaxing.jpg",
+  "assets/images/mood_dining.jpg",
+  "assets/images/mood_partying.jpg",
+  "assets/images/mood_gaming.jpg",
+  "assets/images/mood_working.jpg",
+];
+
+document.querySelector("#arrow_right").addEventListener("click", nextSlide);
+document.querySelector("#arrow_left").addEventListener("click", previousSlide);
+
+function nextSlide() {
+  if (index == moods.length - 1) {
+    index = 0;
+  } else {
+    index++;
+  }
+  document.querySelector("#slide").src = moods[index];
+}
+
+function previousSlide() {
+  if (index == 0) {
+    index = moods.length - 1;
+  } else {
+    index--;
+  }
+  document.querySelector("#slide").src = moods[index];
+}
