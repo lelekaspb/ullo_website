@@ -1,3 +1,4 @@
+// layout and content based on the screen size
 const bigImageWidth = document.querySelector(".image_wrapper").offsetWidth;
 console.log(bigImageWidth);
 document.querySelector(".product").style.setProperty("--dynamic-width", `${bigImageWidth}px`);
@@ -98,6 +99,7 @@ const url =
     document.querySelector(".title").textContent = product.title;
     document.querySelector(".price > span").textContent = product.price_current;
     document.querySelector(".description").textContent = product.description;
+    document.querySelector("title").textContent = product.title;
   }
 
   function changeImage(smallImage) {
