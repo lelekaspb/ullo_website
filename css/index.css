@@ -130,3 +130,9 @@ button.brighten:hover {
     transform: scale(2);
   }
 }
+
+@media screen and (max-width: 400px) {
+  .bulb_clicked {
+    margin-left: 0;
+  }
+}
