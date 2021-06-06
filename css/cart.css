@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --font: "Poppins", sans-serif;
+  --bg-color: #333333;
+  --bg-footer: #f6f6f6;
+  --main-text-color: #3a3a3a;
+  --white-text-color: #eee8e8;
+  --nav-text-color: #5d6b82;
+  --pantone: #3cdbc0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--main-text-color);
+  margin: 0;
+  display: flex;
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 50% 50%;
+}
+
+
+    .column1 {
+        background-color: var(--bg-color);
+        color: var(--white-text-color);
+        border-radius: 6px;
+    }
+
+    img {
+        width: 14.5em;
+        height: 14.5em;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0 0 14px 4px #3cdbc08a;
+        display: inline-block;
+        list-style: none;
+        margin-left: 110vh;
+        margin-right: -5vh;
+        margin-top: -20px;
+      
+       }
+
+       .products li {
+        list-style: none;
+
+        margin-bottom: 1.5em;
+      }
+
+      .prices li {
+        list-style: none;
+
+        margin-bottom: 1.5em;
+      }
+      
+      .products p {
+        font-size: 30px;
+        margin-top: 6.7rem;
+      }
+
+      .prices p {
+        font-size: 18px;
+        margin-top: 6.7rem;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        margin-left: 3.3rem;
+
+
+      }
+
+      .products {display: inline-flex;
+        gap: 4rem;
+        margin-left: 1.3rem;
+        margin-top: 0 auto;
+        transform: translate(8rem, -40rem);
+
+
+
+    }
+
+    .prices {display: inline-flex;
+        gap: 5rem;
+        margin-left: 1.3rem;
+        margin-top: 0 auto;
+        transform: translate(-20rem, -35rem);
+        margin-bottom: 5rem;
+
+
+
+    }
+
+      .circle {
+        border-radius: 50%;
+        height: 3.5rem;
+        width: 3.5rem;
+        background: white;
+        font-family: var(--heading-font);
+        transform: translate(60rem, -10.9rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        box-shadow: 0 0 14px 4px #3cdbc08a;
+
+      }
+
+      h1 {
+          font-family: "Poppins";
+          font-size: 45px;
+          color: white;
+          margin-left: 4rem;
+      }
+
+      
+
+.coupon2 {
+    color:black;
+    float: right;
+
+
+}
+
+hr {
+    margin-left: 0px;
+  
+  }
+
+  .coupon{
+
+    color:#928F8F;
+    display: inline-flex;
+    float: center;
+    grid-row: 1 / span 2;
+
+    
+}
+
+.end {
+    display:grid;
+}

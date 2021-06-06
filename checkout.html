@@ -1,15 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-    <link rel="stylesheet" href="css/main.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-  </head>
-  <body>
-    <script src="js/main.js"></script>
-  </body>
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+  <header>
+   
+  </header>
+  <main>
+      
+        <form>
+            <div class="row">
+                <div class="form">
+                  <div class="container">
+                    <form action="/action_page.php">
+              
+                      <div class="row">
+                        <div class="col-50">
+                            <div id="contact">
+                            <h3>1. Contact</h3>
+                            <div class="seperatingline2"></div>
+
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label>
+                              <input type="checkbox" checked="checked" name="method2"> I want to receive emails with news and offers
+                            </label>
+
+                            <hr style="width:30%"><p3>OR </p3> <hr style="width:30%">
+                            <a href="https://www.paypal.com/dk/home" class="button1">PayPal</a>
+                            <a href="https://pay.google.com/" class="button2">Google Pay</a>
+
+
+
+                            </div>
+                        <div id="shipping">
+                          <h3>2. Shipping </h3>
+                          <div class="seperatingline2"></div>
+
+                          <label for="firstname"><i class="name"></i> First Name</label>
+                          <input type="text" id="firstname" name="firstname" placeholder="John">
+
+                          <label for="lastname"><i class="fa fa-user"></i> Last Name</label>
+                          <input type="text" id="lastname" name="lastname" placeholder="Doe">
+                          <label for="adress"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input type="text" id="adress" name="address" placeholder="542 W. 15th Street">
+                          <label for="city"><i class="fa fa-institution"></i> City</label>
+                          <input type="text" id="city" name="city" placeholder="New York">
+                          
+                              <label for="zip">Zip</label>
+                              <input type="text" id="zip" name="zip" placeholder="10001">
+        
+                              <label for="country">Country</label>
+                              <input type="text" id="country" name="country" placeholder="United States">
+        
+                              <label for="phonenumber">Phone Number</label>
+                              <input type="text" id="phonenumber" name="phonenumber" placeholder="905 6789 0456">
+                              
+                        </div>
+                            
+                        </div>
+  
+                        </div>
+
+             
+         
+          
+        </div>
+      
+
+</form>
+</main>
+
+<aside>
+  <div class="shopping-cart">
+    <div class="title">
+Order Summary    </div>
+<div class="image">
+  <img src="assets/images/flex_strip_1.png" alt="" />
+  
+</div>
+<div class="circle">
+  <p>1</p>
+</div>
+
+<p class="carttotal"><span>25 DKK</span></p>
+
+<div class="image">
+  <img src="assets/images/glow_E27_1.png" alt="" />
+</div>
+<div class="circle">
+  <p>2</p>
+</div>
+<p class="carttotal"><span>25 DKK</span></p>
+<div class="seperatingline"></div>
+<div class="p2">Do you have a discount code?</div>
+
+<div class="discountcodediv">
+  <div class="flex">
+    <input type="text" id="discountcode" name="discountcode" />
+    <a href="creditcardnew.html"><input type="submit" value="Submit" class="button_dark2"/></a>
+  </div>
+</div>
+<div class="seperatingline"></div>
+<div class="carttotaltext">
+  <p>Subtotal</p>
+  <p class="carttotalprice"><span>234 DKK</span></p>
+</div>
+<div class="carttotaltext">
+  <p>Shipping</p>
+  <p class="carttotalprice"><span>25 DKK</span></p>
+</div>
+<div class="seperatingline"></div>
+
+<div class="carttotaltext">
+  <h3>Total</h3>
+  <h3 class="carttotalprice"><span>259 DKK</span></h3>
+
+</div>
+<a href="creditcardnew.html"><input type="submit" value="Payment" class="button_dark"/></a>
+
+
+</div>
+
+
+</aside>
+
+
+  <footer>
+    
+  </footer>
+  <script src="js/checkout.js"></script>
+</body>
 </html>
+ 
+           
+          
