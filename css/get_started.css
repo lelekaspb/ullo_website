@@ -17,10 +17,8 @@
   align-items: center;
 }
 img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
-  object-fit: contain;
-  transform: rotate(20deg);
 }
 .card {
   background-color: #ffffff;
@@ -32,23 +30,61 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
+  width: 300px;
 }
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 20rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .flex-item2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 4rem;
+  gap: 3rem;
+  width: 1000px;
 }
 .line-break {
-  margin-top: 4rem;
-  height: 2px;
+  height: 1px;
   background-color: #333333;
+}
+.flex-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.text-line {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.app-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.app-heading {
+  margin-left: 7rem;
+}
+h3,
+p {
+  font-family: var(--font);
+  font-weight: 400;
+}
+@media only screen and (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    gap: 10rem;
+  }
+  .flex-container2 {
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+  }
 }
