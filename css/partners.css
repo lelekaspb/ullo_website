@@ -1,0 +1,201 @@
+.container {
+    display: grid;
+    grid-template-rows: 16em 15em 15em 15em;
+
+    }
+    
+    #header1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color:#333333;
+    margin-top: 50px;
+    }
+
+        
+    
+    h1 {
+        font-family: "Poppins";
+        font-size: 45px;
+        color: white;
+        text-align: center;
+    }
+
+    h2 {
+        font-family: "Poppins";
+        font-size: 20px;
+        color: white;
+        text-align: left;
+        margin-left: 8em;
+    }
+
+    h3 {
+        font-family: "Poppins";
+        font-size: 20px;
+        color: white;
+        text-align: right;
+        margin-right: 18em;
+
+    }
+
+    p {
+        Font-family: "Poppins";
+    color: white;
+        font-size: 16px;
+        margin-left: 8%;
+        margin-right: 8%;
+
+    
+    }
+
+    .p1 {
+        Font-family: "Poppins";
+    color: white;
+        font-size: 16px;
+        margin-left: 8%;
+        margin-right: 8%;
+
+    
+    }
+
+    main {
+        grid-column-start: 3;
+        grid-column-end: 1;
+        background-color:#333333;
+        margin-left: 20px;
+        margin-top: 55px;
+        border-radius: 10px;
+        
+
+        
+        
+    }
+
+    aside {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color:#333333;
+        margin-left: 20px;
+        margin-top: 70px;
+        border-radius: 10px;
+    }
+
+    body {
+        margin: 0;
+
+    }
+
+    .partnerimages {
+        max-width:500px;
+
+        width: 100%;
+        height: auto;
+
+        border-radius: 35px;
+        box-shadow: 0 0 14px 4px #3cdbc08a;
+        position:absolute;
+
+
+        float: right;
+        margin-top: -140px;
+        margin-left: 46em;
+    }
+
+    .partnerimages3 {
+        max-width:500px;
+
+        width: 100%;
+        height: auto;
+
+        border-radius: 35px;
+        box-shadow: 0 0 14px 4px #3cdbc08a;
+        position:relative;
+
+
+        float: right;
+        margin-top: -140px;
+        margin-left: 46em;
+    }
+.partnerimages2 {
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+        
+            max-width:500px;
+    
+            width: 100%;
+            height: auto;
+    
+            border-radius: 35px;
+            box-shadow: 0 0 14px 4px #3cdbc08a;
+            position:relative;
+align-items: left;    
+    
+            margin-top: -150px;
+            margin-right: 46em;
+        }
+
+        .partnerimages {
+        max-width:500px;
+
+        width: 100%;
+        height: auto;
+
+        border-radius: 35px;
+        box-shadow: 0 0 14px 4px #3cdbc08a;
+        position:absolute;
+
+
+        float: right;
+        margin-top: -140px;
+        margin-left: 46em;
+    }
+
+       aside {
+           text-align: right;
+       }
+
+       #bottom {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color:#333333;
+        margin-left: 20px;
+        margin-top: 70px;
+        border-radius: 10px;
+       }
+
+       footer {
+           margin-top: 60px;
+       }
+    
+       @media (max-width: 800px) {
+
+        .partnerimages {
+            width: 100%;
+            display: inline-block;
+            margin-top: 10%;
+            position: relative;
+
+
+        }
+
+        .partnerimages2 {
+            width: 100%;
+            display: inline-block;
+            margin-top: 10%;
+
+
+
+            
+        }
+       
+                
+                
+
+        .container {
+            display: block;
+            grid-template-rows: 16em 15em 15em 15em;
+        
+            }
+        
+       }
+    
