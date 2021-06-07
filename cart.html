@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="css/main.css">
-
     <link rel="stylesheet" href="css/cart.css">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> -->
     
 </head>
 <body>
@@ -104,8 +102,88 @@
    
   </header>
   <main>
-      <div class="column1"> <h1>Shopping Cart</h1>
-        
+    
+    <section class="cart">
+      <h1>Shopping cart</h1>
+      <div class="cart_product">
+        <div class="title cart_product_elem">
+          <span class="title_heading">Product</span>
+          <span class="title_value value">Glow E27</span>
+        </div>
+        <div class="price cart_product_elem">
+          <span class="price_heading">Price</span>
+          <span class="price_value value">249 kr</span>
+        </div> 
+        <div class="subtotal cart_product_elem">
+          <span class="subtotal_heading">Subtotal</span>
+          <span class="subtotal_value value">498 kr</span>
+        </div>
+        <div class="plusminus cart_product_elem">
+          <div class="plus">+</div>
+          <div class="minus">-</div>
+        </div>
+      </div>
+      <div class="cart_image">
+        <div class="image_wrapper">
+          <img src="assets/images/glow_E27_1.png" alt="" class="big_image">
+          <div class="quantity">2</div>
+        </div>
+      </div>
+
+      <div class="cart_product">
+        <div class="title cart_product_elem">
+          <span class="title_heading">Product</span>
+          <span class="title_value value">Ullo Remote</span>
+        </div>
+        <div class="price cart_product_elem">
+          <span class="price_heading">Price</span>
+          <span class="price_value value">100 kr</span>
+        </div> 
+        <div class="subtotal cart_product_elem">
+          <span class="subtotal_heading">Subtotal</span>
+          <span class="subtotal_value value">100 kr</span>
+        </div>
+        <div class="plusminus cart_product_elem">
+          <div class="plus">+</div>
+          <div class="minus">-</div>
+        </div>
+      </div>
+      <div class="cart_image">
+        <div class="image_wrapper">
+          <img src="assets/images/remote_1.png"" alt="" class="big_image">
+          <div class="quantity">1</div>
+        </div>
+      </div>
+    
+    </section>
+
+    <section class="cart_summary">
+      <form action="" class="coupon">
+        <input
+            type="text"
+            name="coupon"
+            id="coupon"
+            placeholder="Type in your coupon code here"
+        />
+        <button type="submit">
+          <span>Apply coupon    </span>
+          <img src="assets/icons/rarr.svg" alt="submit button" />
+        </button>
+      </form>
+      <div class="total">
+        <div class="total_heading">Total:</div>
+        <div class="total_value">
+          <span class="total_number">598 kr </span>
+          <span class="vat"> (incl. vat)</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <a href="checkout.html" class="checkout">Checkout</a>
+        <a href="products.html" class="back_to_shopping">Continue shopping</a>
+      </div>
+    </section>
+    
+      <!-- <div class="column1"> <h1>Shopping Cart</h1>
           </section>
         <div class="image"> <img class="checkoutimage" src="assets/images/glow_E27_1.png" alt="" />
       </div><div class="circle">
@@ -148,11 +226,10 @@
      
     </div>
       
-      <div class="column2"></div>
+      <div class="column2"></div> -->
 
   </main>
-    <footer>
-      <footer class="main_footer">
+  <footer class="main_footer">
         <div class="footer_wrapper">
           <section class="footer_links">
             <h4>Site links</h4>
@@ -240,8 +317,9 @@
           </article>
         </section>
     
-</footer>
-<script src="checkout.js"></script>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
 </body>
 </html>
 
