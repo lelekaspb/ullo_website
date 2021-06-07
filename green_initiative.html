@@ -7,9 +7,274 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/green_initiative.css" />
     <title>The green initiative</title>
   </head>
   <body>
+    <header>
+      <nav class="menu_head">
+        <a class="menu_logo" href="home.html">
+          <img src="assets/icons/logo_ullo.svg" alt="Ullo logo" />
+        </a>
+        <div class="menu_text" id="menu_text_id">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+              <a href="products.html">Products</a>
+              <img
+                id="menu_drop1"
+                class="hidden"
+                src="assets/icons/menu_chevron.svg"
+                alt="Icon of an arrow"
+              />
+              <ul class="hidden">
+                <li>
+                  <a href="individual_product.html?id=60a28f1df7c7ed16000c164a"
+                    >Glow E27</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a29074f7c7ed16000c166f"
+                    >Spot GU10</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a290fef7c7ed16000c1690"
+                    >Torch E14</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a291b6f7c7ed16000c16aa"
+                    >Flex strip</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a2926af7c7ed16000c16c3"
+                    >Remote</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a29327f7c7ed16000c16eb"
+                    >Starter kit</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="get_started.html">Get started</a></li>
+            <li class="menu_dropdown">
+              <a href="about_ullo.html">About Ullo</a>
+              <img
+                id="menu_drop2"
+                class="hidden"
+                src="assets/icons/menu_chevron.svg"
+                alt="Icon of a downwards facing arrow"
+              />
+              <ul class="hidden">
+                <li><a href="our_story.html">Our story</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a href="green_initiative.html">Green initiative</a></li>
+                <li><a href="partners.html">Our partners</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu_search">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </div>
+        <a class="menu_cart" href="cart.html">
+          <img src="assets/icons/cart.svg" alt="Shopping cart" />
+        </a>
+        <div id="hamburger" class="ham hidden"></div>
+      </nav>
+      <form class="search_box hidden" action="#" method="get" role="search">
+        <input
+          type="text"
+          placeholder="Type to search"
+          name="query"
+          value=""
+          required
+        />
+        <button id="search_button" type="submit">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </button>
+        <img id="search_cross" src="assets/icons/cross.svg" alt="Cross icon" />
+      </form>
+    </header>
+    <main>
+      <div class="hero-heading">
+        <div class="hero-padding">
+          <h1>The green initiative</h1>
+          <p>
+            For us at Ullo, it is important to give back where we can. We value
+            sustainable and innovative solutions, and therefore we have taken
+            various initiatives that we believe are some important steps towards
+            a better world and future. One of the measures is to compensate for
+            CO2. In collaboration with Ecologi, Ullo has made it possible to
+            plant a tree for each product sold. This means that for every
+            product you buy, Ullo plants a tree! Of course it's Ullo who pays,
+            so don't worry, it's not something that makes it more expensive for
+            you.
+          </p>
+        </div>
+      </div>
+      <div class="ullo-ani">
+        <div class="bulb">
+          <img src="assets/images/glow_E27_1.png" alt="" />
+          <img src="assets/images/glow_E27_1.png" alt="" />
+        </div>
+        <div class="green-ullo-logo">
+          <img src="assets/icons/logo_ullo.svg" alt="" />
+        </div>
+        <div class="tree">
+          <img src="assets/images/MicrosoftTeams-image (2).png" alt="" />
+          <img src="assets/images/MicrosoftTeams-image (2).png" alt="" />
+        </div>
+      </div>
+      <section class="gradient forest">
+        <div>
+          <a href="https://ecologi.com/ullo" target="_blank"
+            >Visit our forest</a
+          >
+          <p>
+            It is important that you as a customer know that there is action
+            behind our words when we say we plant one tree per unit sold. Thanks
+            to a collaboration with Ecologi, you can follow your trees and the
+            rest of our forest.
+          </p>
+        </div>
+        <div>
+          <img src="assets/icons/ecologi.svg" alt="Ecologi icon" />
+        </div>
+      </section>
+      <section class="packaging left">
+        <picture class="left_image">
+          <img
+            src="assets/images/fsc_package.jpg"
+            alt="photo of a lumber truck"
+          />
+        </picture>
+        <div class="left_info_wrapper">
+          <div class="left_info">
+            <h2 class="left_heading heading">Packaging</h2>
+            <p class="left_text text">
+              Our packages are made of FSC-certified materials.FSC is an
+              international non-profit labeling scheme for wood and paper which
+              ensures that more of nature will never be used than it can
+              reproduce.
+            </p>
+            <a href="" class="btn_link">Get to Know Us</a>
+          </div>
+        </div>
+      </section>
+      <section class="shopify right">
+        <div class="right_info_wrapper">
+          <div class="right_info">
+            <h2 class="right_heading heading">Shopify</h2>
+            <p class="right_text text">
+              At Ullo, we have chosen that our server hosting must be
+              sustainable, and we have therefore chosen to use shopify. Shopify
+              spends $ 5 million a year investing in a greener future and
+              innovative energy solutions for the future.
+            </p>
+            <a href="" class="btn_link">See how</a>
+          </div>
+        </div>
+        <picture class="right_image">
+          <img
+            src="assets/images/shopify-logo-window-with-plant.jpg"
+            alt="photo of a room in colored blue-colored light"
+          />
+        </picture>
+      </section>
+    </main>
+    <footer class="main_footer">
+      <div class="footer_wrapper">
+        <section class="footer_links">
+          <h4>Site links</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </section>
+        <section class="footer_subscribe">
+          <h4>Newsletters</h4>
+          <form action="#" class="form_subscribe">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+            <!-- <input type="submit" value="&rarr;" /> -->
+            <button type="submit">
+              <img src="assets/icons/rarr.svg" alt="submit button" />
+            </button>
+          </form>
+        </section>
+        <section class="footer_payment">
+          <img
+            src="assets/icons/google_pay.svg"
+            alt="google pay icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/paypal.svg"
+            alt="paypal icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/visa.svg"
+            alt="visa icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/mastercard.svg"
+            alt="mastercard icon"
+            class="icon_payment"
+          />
+        </section>
+        <section class="footer_social">
+          <a href="https://www.facebook.com/ullo.dk/" target="_blank">
+            <img
+              src="assets/icons/Ullofacebook.png"
+              alt="facebook icon"
+              class="icon_SoMe"
+            />
+          </a>
+          <a href="https://www.instagram.com/ullo.official/" target="_blank">
+            <img
+              src="assets/icons/Ulloinstagram.png"
+              alt="instagram icon"
+              class="icon_SoMe"
+          /></a>
+          <a
+            href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fullo.dk"
+            target="_blank"
+          >
+            <img
+              src="assets/icons/ullotwitter.png"
+              alt="twitter icon"
+              class="icon_SoMe"
+          /></a>
+        </section>
+        <section class="footer_general">
+          <p>
+            Copyright &#169; Ullo, Powered by Shopify <br />
+            Nørrebrogade 225 5, 2200 København N &nbsp; CVR: 41797584 <br />
+            <a href="mailto:hej@ullo.dk">hej@ullo.dk</a>
+          </p>
+        </section>
+      </div>
+      <section class="modal_subscribe" id="modal_subscribe">
+        <article class="modal-content">
+          <span class="close">&times;</span>
+          <p>Thank you!</p>
+          <p>We will keep you posted.</p>
+        </article>
+      </section>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
