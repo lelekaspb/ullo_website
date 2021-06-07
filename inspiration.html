@@ -7,9 +7,283 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/inspiration.css">
     <title>Get inspired</title>
   </head>
   <body>
+    <header>
+      <nav class="menu_head">
+        <a class="menu_logo" href="home.html">
+          <img src="assets/icons/logo_ullo.svg" alt="Ullo logo" />
+        </a>
+        <div class="menu_text" id="menu_text_id">
+          <ul>
+            <li ><a href="home.html">Home</a></li>
+            <li class="menu_dropdown">
+              <a href="products.html">Products</a>
+              <img
+                id="menu_drop1"
+                class="hidden"
+                src="assets/icons/menu_chevron.svg"
+                alt="Icon of an arrow"
+              />
+              <ul class="hidden">
+                <li>
+                  <a href="individual_product.html?id=60a28f1df7c7ed16000c164a"
+                    >Glow E27</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a29074f7c7ed16000c166f"
+                    >Spot GU10</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a290fef7c7ed16000c1690"
+                    >Torch E14</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a291b6f7c7ed16000c16aa"
+                    >Flex strip</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.htl?mid=60a2926af7c7ed16000c16c3"
+                    >Remote</a
+                  >
+                </li>
+                <li>
+                  <a href="individual_product.html?id=60a29327f7c7ed16000c16eb"
+                    >Starter kit</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="get_started.html">Get started</a></li>
+            <li class="menu_dropdown active">
+              <a href="about_ullo.html">About Ullo</a>
+              <img
+                id="menu_drop2"
+                class="hidden"
+                src="assets/icons/menu_chevron.svg"
+                alt="Icon of a downwards facing arrow"
+              />
+              <ul class="hidden">
+                <li><a href="our_story.html">Our story</a></li>
+                <li><a href="inspiration.html">Inspiration</a></li>
+                <li><a href="green_initiative.html">Green initiative</a></li>
+                <li><a href="partners.html">Our partners</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div id="menu_search">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </div>
+        <a class="menu_cart" href="cart.html">
+          <img src="assets/icons/cart.svg" alt="Shopping cart" />
+        </a>
+        <div id="hamburger" class="ham hidden"></div>
+      </nav>
+      <form class="search_box hidden" action="#" method="get" role="search">
+        <input
+          type="text"
+          placeholder="Type to search"
+          name="query"
+          value=""
+          required
+        />
+        <button id="search_button" type="submit">
+          <img src="assets/icons/search.svg" alt="Icon of a magnifying glass" />
+        </button>
+        <img id="search_cross" src="assets/icons/cross.svg" alt="Cross icon" />
+      </form>
+    </header>
+    <main>
+      <section class="instagram">
+        <h2 class="instagram_title title">Join the #UlloWorld</h2>
+        <p class="instagram_intro">We love to see what our customers are up to. Go ahead and tag #ulloworld on your picture and don’t forget 
+          to go visit our Instagram Page!</p>
+          <div class="instagram_gallery">
+            <div class="gallery_item">
+              <a href="#" class="instargam_link">
+                <img src="assets/images/instagram_happybirthday.jpg" alt="happy birhtday in blue light" class="instagram_image">
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#" class="instargam_link">
+                <img src="assets/images/instagram_tv_3.jpg" alt="entertaiment center synchronized with smart lights" class="instagram_image">
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#" class="instargam_link">
+                <img src="assets/images/instagram_homeoffice.jpg" alt="picture of a home office with smart lights" class="instagram_image">
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#" class="instargam_link">
+                <img src="assets/images/instagram_globe.jpg" alt="globe-lamp with smart light bulb inside" class="instagram_image">
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#" class="instargam_link">
+                <img src="assets/images/instagram_tv_2.jpg" alt="entertaiment center synchronized with smart lights" class="instagram_image">
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#" class="instargam_link">
+                <img src="assets/images/instagram_liquer.jpg" alt="home alcohol bar in blue light" class="instagram_image">
+              </a>
+            </div>
+          </div>
+      </section>
+      <section class="moods">
+        <h2 class="moods_title title">Set the Moods...</h2>
+        <div class="moods_wrapper">
+          <article class="dining right">
+            <div class="right_text text">
+              <h3 class="subtitle">Dinning</h3>
+              <p class="right_paragraph paragraph">Match the perfect light with your meal.</p>
+            </div>
+            <div class="right_image image">
+              <img src="assets/images/mood_dining.jpg" alt="image of people having a dinner in a room with colored light" class="moods_image">
+            </div>
+          </article>
+          <article class="gaming left">
+            <div class="left_text text">
+              <h3 class="subtitle">Gaming</h3>
+              <p class="left_paragraph paragraph">Synchronize lights with 
+                your entertainment center in order to create the perfect gaming mood.</p>
+            </div>
+            <div class="left_image image">
+              <img src="assets/images/mood_gaming.jpg" alt="image of people having a dinner in a room with colored light" class="moods_image">
+            </div>
+          </article>
+          <article class="partying right">
+            <div class="right_text text">
+              <h3 class="subtitle">Partying</h3>
+              <p class="right_paragraph paragraph">Create a party mood in 
+                a finger snap.
+                </p>
+            </div>
+            <div class="right_image image">
+              <img src="assets/images/mood_partying.jpg" alt="image of people having a dinner in a room with colored light" class="moods_image">
+            </div>
+          </article>
+          <article class="relaxing left">
+            <div class="left_text text">
+              <h3 class="subtitle">Relaxing</h3>
+              <p class="left_paragraph paragraph">Cozy light for your 
+                cozy evenings.
+                </p>
+            </div>
+            <div class="left_image image">
+              <img src="assets/images/mood_relaxing.jpg" alt="image of people having a dinner in a room with colored light" class="moods_image">
+            </div>
+          </article>
+          <article class="working right">
+            <div class="right_text text">
+              <h3 class="subtitle">Working</h3>
+              <p class="right_paragraph paragraph">Use the light to create 
+                a perfect work atmosphere that suits your work style.
+                </p>
+            </div>
+            <div class="right_image image">
+              <img src="assets/images/mood_working.jpg" alt="image of people having a dinner in a room with colored light" class="moods_image">
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="main_footer">
+      <div class="footer_wrapper">
+        <section class="footer_links">
+          <h4>Site links</h4>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Cookie policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+          </ul>
+        </section>
+        <section class="footer_subscribe">
+          <h4>Newsletters</h4>
+          <form action="#" class="form_subscribe">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+            <!-- <input type="submit" value="&rarr;" /> -->
+            <button type="submit">
+              <img src="assets/icons/rarr.svg" alt="submit button" />
+            </button>
+          </form>
+        </section>
+        <section class="footer_payment">
+          <img
+            src="assets/icons/google_pay.svg"
+            alt="google pay icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/paypal.svg"
+            alt="paypal icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/visa.svg"
+            alt="visa icon"
+            class="icon_payment"
+          />
+          <img
+            src="assets/icons/mastercard.svg"
+            alt="mastercard icon"
+            class="icon_payment"
+          />
+        </section>
+        <section class="footer_social">
+          <a href="https://www.facebook.com/ullo.dk/" target="_blank">
+            <img
+              src="assets/icons/Ullofacebook.png"
+              alt="facebook icon"
+              class="icon_SoMe"
+            />
+          </a>
+          <a href="https://www.instagram.com/ullo.official/" target="_blank">
+            <img
+              src="assets/icons/Ulloinstagram.png"
+              alt="instagram icon"
+              class="icon_SoMe"
+          /></a>
+          <a
+            href="https://twitter.com/intent/tweet?text=&url=https%3A%2F%2Fullo.dk"
+            target="_blank"
+          >
+            <img
+              src="assets/icons/ullotwitter.png"
+              alt="twitter icon"
+              class="icon_SoMe"
+          /></a>
+        </section>
+        <section class="footer_general">
+          <p>
+            Copyright &#169; Ullo, Powered by Shopify <br />
+            Nørrebrogade 225 5, 2200 København N &nbsp; CVR: 41797584 <br />
+            <a href="mailto:hej@ullo.dk">hej@ullo.dk</a>
+          </p>
+        </section>
+      </div>
+      <section class="modal_subscribe" id="modal_subscribe">
+        <article class="modal-content">
+          <span class="close">&times;</span>
+          <p>Thank you!</p>
+          <p>We will keep you posted.</p>
+        </article>
+      </section>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
