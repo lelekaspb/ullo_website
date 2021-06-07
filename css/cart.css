@@ -31,7 +31,7 @@ main {
         border-radius: 6px;
     }
 
-    img {
+    .checkoutimage {
         width: 14.5em;
         height: 14.5em;
         background-color: white;
@@ -117,6 +117,7 @@ main {
           font-size: 45px;
           color: white;
           margin-left: 4rem;
+          margin-top: 2em;
       }
 
       
@@ -137,8 +138,7 @@ hr {
 
     color:#928F8F;
     display: inline-flex;
-    float: center;
-    grid-row: 1 / span 2;
+    float: top;
 
     
 }

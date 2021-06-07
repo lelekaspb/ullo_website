@@ -127,7 +127,7 @@ p {
   text-align: center;
 }
 
-img {
+.checkoutimage {
   width: 7.5rem;
   height: 7.5rem;
   background-color: white;
@@ -403,10 +403,7 @@ margin-left: 20%;
     .button_dark {
       margin-left: 50%;
 ¨   }
-    p3{
-      display: flex;
-      margin-left: 50%;
-    }
+    
   
   
   
