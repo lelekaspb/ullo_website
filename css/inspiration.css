@@ -7,6 +7,14 @@ main {
     margin-bottom: calc(2rem + 4vw);
 }
 
+.instagram_title {
+    font-size: calc(2rem + 1vw);
+    font-weight: 600;
+    background-color: #333333;
+    color: #eee8e8;
+    padding: 2rem 0;
+    text-align: center;
+}
 .title {
     font-size: calc(1.2rem + 1vw);
     font-weight: 600;
